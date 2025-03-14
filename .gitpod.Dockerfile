@@ -1,6 +1,6 @@
 FROM gitpod/workspace-full:latest
 
-RUN yum -y update
+RUN apt-get -y update
 
 # OpenTofu
 ADD https://get.opentofu.org/install-opentofu.sh /tmp/install-opentofu.sh
