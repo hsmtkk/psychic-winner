@@ -12,4 +12,4 @@ RUN sudo chmod 755 /usr/local/bin/terragrunt
 
 # AWS CLI
 ADD https://s3.amazonaws.com/aws-cli/awscli-bundle.zip /tmp/awscli-bundle.zip
-RUN sudo apt-get -y install python3-venv && sudo unzip /tmp/awscli-bundle.zip && sudo python3 /tmp/awscli-bundle/install -i /usr/local/aws -b /usr/local/bin/aws
+RUN sudo apt-get -y install python3-venv && sudo unzip /tmp/awscli-bundle.zip -d /tmp && sudo python3 /tmp/awscli-bundle/install -i /usr/local/aws -b /usr/local/bin/aws
