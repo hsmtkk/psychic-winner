@@ -6,6 +6,7 @@ tasks:
   format:
     cmds:
     - terragrunt hclfmt
+    - tofu fmt -recursive
   validate:
     cmds:
     - terragrunt hclvalidate
