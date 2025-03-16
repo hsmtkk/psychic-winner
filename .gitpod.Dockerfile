@@ -16,4 +16,4 @@ RUN sudo apt-get -y install python3-venv && sudo unzip /tmp/awscli-bundle.zip -d
 
 # Task
 ADD https://github.com/go-task/task/releases/download/v3.42.1/task_linux_amd64.tar.gz /tmp/task_linux_amd64.tar.gz
-RUN sudo mv /tmp/task_linux_amd64 /usr/local/bin/task && sudo chmod 755 /usr/local/bin/task
+RUN sudo tar xzf /tmp/task_linux_amd64.tar.gz -C /tmp && sudo mv /tmp/task /usr/local/bin/task && sudo chmod 755 /usr/local/bin/task
